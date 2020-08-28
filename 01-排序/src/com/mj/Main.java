@@ -50,7 +50,9 @@ public class Main {
 
     static void testSort(Integer[] array, Sort... sorts) {
         for (Sort sort : sorts) {
-            sort.sort(Integers.copy(array));
+            Integer[] newArray = Integers.copy(array);
+            sort.sort(newArray);
+            Asserts.test(Integers.isAscOrder(newArray));
         }
 
         Arrays.sort(sorts);

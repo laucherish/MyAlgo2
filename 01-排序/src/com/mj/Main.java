@@ -3,12 +3,13 @@ package com.mj;
 import com.mj.sort.*;
 import com.mj.tools.Asserts;
 import com.mj.tools.Integers;
-import com.mj.tools.Times;
 
 import java.util.Arrays;
 
 public class Main {
     public static void main(String[] args) {
+
+
 //        Integer[] array1 = Integers.tailAscOrder(1, 10000, 2000);
 //        Integer[] array2 = Integers.copy(array1);
 //        Integer[] array3 = Integers.copy(array1);
@@ -25,7 +26,7 @@ public class Main {
 //            bubbleSort3(array3);
 //        });
 
-        Integer[] array = Integers.random(10000, 1, 20000);
+//        Integer[] array = Integers.random(10000, 1, 20000);
 //        Integer[] array2 = Integers.copy(array1);
 //        Integer[] array3 = Integers.copy(array1);
 
@@ -39,13 +40,15 @@ public class Main {
 //            new BubbleSort3().sort(array3);
 //        });
 
-        testSort(array,
-               new BubbleSort1(),
-               new BubbleSort2(),
-               new HeapSort(),
-               new SelectionSort(),
-               new BubbleSort3()
-        );
+//        testSort(array,
+////               new BubbleSort1(),
+////               new BubbleSort2(),
+//                new InsertionSort1(),
+//                new InsertionSort2(),
+//                new HeapSort(),
+//                new SelectionSort(),
+//                new BubbleSort3()
+//        );
     }
 
     static void testSort(Integer[] array, Sort... sorts) {
